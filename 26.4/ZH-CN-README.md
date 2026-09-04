@@ -51,8 +51,14 @@ python ./rebuild_official_resources.py
 
 目前覆盖首页、左侧栏、工具栏、菜单和提示、会话编辑器、服务器管理、终端操作、MultiExec、常用文件操作及常用设置。`SSH`、`Telnet`、`RDP`、`Serial` 等协议名称保留英文；游戏内容暂不翻译；少量诊断信息和低频对话框仍可能显示英文。
 
+## 参考来源与致谢
+
+- MobaXterm 23.0 简体中文项目：[RipplePiam/MobaXterm-Chinese-Simplified](https://github.com/RipplePiam/MobaXterm-Chinese-Simplified)。本版本参考其部分中文术语、界面译法和翻译组织方式。
+- 52 破解相关资料：[作者主页](https://www.52pojie.cn/?1222738)。本版本参考其中关于 `.rsrc` 界面资源重建、资源重排和菜单布局处理的技术思路。
+
+以上内容仅作为翻译和技术研究参考。本版本没有直接移植上述项目或文章中的 EXE、插件、代码段、`.movehcs` 文件或其他二进制；26.4 汉化结果由官方原版和本目录脚本独立构建。
+
 ## English summary
 
 This repository contains a self-built Chinese patch for the official MobaXterm 26.4 executable. The base patch edits only identified Delphi/VCL strings and selected runtime messages. The optional resource-rebuild pass repacks our own RCData/DFM resources to remove NUL padding that can distort VCL menu measurements. No third-party executable, code section, custom section, or `.movehcs` data is used. Modified executables are unsigned by design; keep and verify the vendor-signed original before running any patched build.
-
 
